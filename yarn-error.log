@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/brendan/git/app-configuration-prototype/node_modules/.bin:/home/brendan/.local/bin:/home/brendan/.yarn/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.14.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/brendan/git/app-configuration-prototype/package.json: Unexpected token } in JSON at position 691
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "app-configuration-prototype",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+      "@types/react": "16.0.31",
+      "@types/react-dom": "16.0.3",
+      "lodash": "latest",
+      "react": "16.2.0",
+      "react-dom": "16.2.0"
+    },
+    "scripts": {
+      "start": "react-scripts-ts start",
+      "build": "react-scripts-ts build",
+      "test": "react-scripts-ts test --env=jsdom",
+      "eject": "react-scripts-ts eject"
+    },
+    "devDependencies": {
+      "@types/lodash": "latest",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.2",
+      "babel-runtime": "^6.26.0",
+      "jest": "^23.6.0",
+      "react-scripts-ts": "^4.0.8",
+      "ts-jest": "^23.10.5",
+      "typescript": "^3.1.6",
+    },
+    "description": "Prototype for convention based configuration supporting database, environment and extenal settings file",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,23 @@
+h1, p {
+  font-family: Lato;
+}
+
+.display-breaks {
+  white-space: pre-line;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+@media (max-width: 768px) {
+  .flex-grid {
+    display: block;
+  }
+}
